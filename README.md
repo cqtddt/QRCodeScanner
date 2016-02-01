@@ -1,7 +1,8 @@
 # QRCodeScanner
 二维码扫描，生成二维码，生成条形码，生成类似天猫微信分享图片
 
-设置参数如下：
+设置参数如下：<br>
+<code>
 `
 ShowInfo showInfo = new ShowInfo();
 showInfo.setLogoName("天天");
@@ -13,9 +14,9 @@ showInfo.setProdActivityPrice("￥47-52");
 showInfo.setProdPrice("￥129-134");
 showInfo.setProdUrl("http://www.baidu.com.cn");
 showInfo.setQrCodeHint("二维码会有惊喜");
-`
-调用方法：
-`
+`</code><br>
+调用方法：<br>
+<code>`
 boolean success = QRCodeUtil.createShareWechatImg(CreateShareActivity.this,showInfo,filePath);
 			if (success) {
 				runOnUiThread(new Runnable() {
@@ -26,6 +27,6 @@ boolean success = QRCodeUtil.createShareWechatImg(CreateShareActivity.this,showI
 				}
 				});
 			}
-`
-分享图片如下：
+`</code><br>
+分享图片如下：<br>
 ![image](qr_1454033085851.jpg) 
